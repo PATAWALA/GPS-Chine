@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Produits from "@/components/Produits";
+import Parcours from "@/components/Parcours";
 import FooterCTA from "@/components/FooterCTA";
 
 export default function Accueil() {
@@ -8,7 +8,7 @@ export default function Accueil() {
     <main>
       <Hero />
       <Services />
-      <Produits />
+      <Parcours />
       <FooterCTA />
     </main>
   );

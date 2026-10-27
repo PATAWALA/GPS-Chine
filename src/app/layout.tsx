@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import WhatsAppFlottant from "@/components/WhatsAppFlottant";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "GPS Chine — Réservez votre projet en Chine",
+  title: "Grace Patricia Services Chine — Achat et bourses",
   description:
-    "Visite d'usine, contrôle qualité, achat et logistique en Chine. Réservez votre projet en 30 secondes.",
+    "Achat en Chine, bourses d'études, visite d'usine et contrôle qualité. Réservez en 30 secondes via WhatsApp.",
 };
 
 export default function RootLayout({
@@ -17,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={inter.variable}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Header />
+        {children}
+        <WhatsAppFlottant />
+      </body>
     </html>
   );
 }
